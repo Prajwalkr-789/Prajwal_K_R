@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import personal from '../Utils/IMG_20240206_195126-removebg-preview.png'
 
 function Home() {
   const[isMobile,setisMobile] = useState(false)
@@ -44,7 +45,7 @@ const styledivs = (isdark) =>`${isdark?'bg-gray-950  border  border-l-2 border-g
 
     <div class={`container p-12 ${isdark?'text-white':'text-black'} z-10`}>
       <div
-        data-aos="fade-right"
+        data-aos={isMobile?'fade-up':'fade-left'}
         class={`first p-4 ${styledivs(isdark)} text-center flex flex-col justify-center items-center overflow-auto `}
       >
         
@@ -53,7 +54,7 @@ const styledivs = (isdark) =>`${isdark?'bg-gray-950  border  border-l-2 border-g
        
       </div>
       <div
-        data-aos="fade-right"
+        data-aos={isMobile?'fade-up':'fade-left'}
         class={`Second p-4 ${styledivs(isdark)} text-center items-center overflow-auto `}
       >
        <h2 className="text-2xl font-bold ">Information Science</h2>
@@ -61,7 +62,7 @@ const styledivs = (isdark) =>`${isdark?'bg-gray-950  border  border-l-2 border-g
         <p className="">Avg_CGPA : 8.5</p>
       </div>
       <div
-        data-aos="fade-right"
+        data-aos={isMobile?'fade-up':'fade-left'}
         class={`thirsd p-4 ${styledivs(isdark)}  overflow-auto  font-serif flex justify-center items-center`}
       >
         <ul>
@@ -75,22 +76,19 @@ const styledivs = (isdark) =>`${isdark?'bg-gray-950  border  border-l-2 border-g
         </ul>
       </div>
       <div
-        data-aos="fade-right"
+        data-aos={isMobile?'fade-up':'fade-left'}
         class={`four p-4 ${styledivs(isdark)} overflow-auto  `}
       >
         <p>Full stack developer skilled in frontend and backend technologies, creating dynamic and responsive websites with seamless user experiences.</p>
       </div>
       <div
-        data-aos="fade-left"
-        class={`five p-4 ${styledivs(isdark)} text-center font-verdana bg-opacity-100   `}
+        data-aos={isMobile?'fade-up':'fade-right'}
+        class={`five p-4 ${styledivs(isdark)} ${isMobile?'':'ml-10'}  bg-transparent border-none shadow-none text-center font-verdana bg-opacity-100 overflow-hidden  `}
       >
-         <p className={`text-sm `}>
-         <img src="" alt="Photograph" />
-         
-        </p>
+         <img className="w-8/12 mx-auto shadow-md shadow-blue-400 bg-blue-500 rounded-full" src={personal} alt="Photograph" />
       </div>
       <div
-        data-aos="fade-right"
+        data-aos={isMobile?'fade-up':'fade-right'}
         data-aos-delay={100}
         class={`six p-4 ${isMobile?'w-full':''} ${isdark?'bg-gray-950  bg-opacity-10 backdrop-blur-2xl border  border-l-2 border-gray-100 shadow-slate-800 shadow-xl':'card text-gray-900'} flex flex-col items-center justify-center   bg-opacity-100 overflow-auto  text-center`}
       >
@@ -139,7 +137,7 @@ const styledivs = (isdark) =>`${isdark?'bg-gray-950  border  border-l-2 border-g
                   </ul>
       </div>
       <div
-        data-aos="fade-left"
+        data-aos={isMobile?'fade-up':'fade-left'}
         data-aos-delay={100}
         class={`seven p-5 ${isdark?'bg-gray-950  bg-opacity-10 backdrop-blur-2xl border  border-l-2 border-gray-100 shadow-gray-800 shadow-xl':'card text-gray-1000'} bg-opacity-100 overflow-auto  text-center  `}
       >

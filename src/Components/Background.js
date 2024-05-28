@@ -57,7 +57,7 @@ setscreensize(window.innerWidth)
           <li data-aos="fade-right" data-aos-delay="200" className={`${isMobile?'ml--1':''}ml-6`}><span className='text-red-500 font-semibold'>const</span> coder =  &#123;</li>
           <li data-aos="fade-right" data-aos-delay="250" className={`${isMobile?'ml-1':'ml-10'}`}>name : 'Prajwal KR'</li>
           <li data-aos="fade-right" data-aos-delay="300" className={`${isMobile?'ml-1':'ml-10'} text-yellow-500 font-semibold`}><span className='text-white'>skills :</span> [ 'React Js' , 'Javascript' , 'Responsive web design' ,</li>
-          <li data-aos="fade-right" data-aos-delay="350" className={`${isMobile?'ml-1':'ml-10'} text-yellow-500 font-semibold `}>'Web Development' , 'Tailwind Js' , 'Node Js' ,'Express Js' ,'MongoDB'],</li>
+          <li data-aos="fade-right" data-aos-delay="350" className={`${isMobile?'ml-1':'ml-10'} text-yellow-500 font-semibold `}> 'Web Development' , 'Tailwind CSS' , 'Node Js' , 'Express Js' , 'MongoDB'],</li>
           <li data-aos="fade-right" data-aos-delay="400" className={`${isMobile?'ml-1':'ml-10'}`}>Problem Solving : '<span className='text-blue-500 font-semibold'>true</span>',</li>
           <li data-aos="fade-right" data-aos-delay="450" className={`${isMobile?'ml-1':'ml-10'}`}>Adaptability : '<span className='text-blue-500 font-semibold'>true</span>' , </li>
           <li data-aos="fade-right" data-aos-delay="500" className={`${isMobile?'ml-1':'ml-10'}`}><span className='text-green-500'>hireable</span> : <span className='text-fuchsia-500'>function()</span> &#123;</li>

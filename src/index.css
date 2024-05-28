@@ -30,8 +30,8 @@ body{
     gap: 18px 21px;
     grid-auto-flow: row;
     grid-template-areas:
-      "first Second five five"
-      "third four five five"
+      "five five first Second "
+      " five five third four "
       "six six seven seven";
   }
   .skills_list{
@@ -155,60 +155,12 @@ body{
   background: linear-gradient(to right , purple , yellow , red);
   color: transparent;
   background-clip: text;
-  /* animation: gradientChange 5s ease-in-out infinite;
-/* } 
-
-.bgimg{
-  background: url('https://unsplash.com/photos/closeup-photo-of-computer-keyboard-WkfDrhxDMC8');
-  background-size: cover;
+   /* animation: gradientChange 5s ease-in-out infinite; */
+ /* }  */
 }
 
-.cvbutton {
-  width: 10em;
-  position: relative;
-  height: 3.5em;
-  border: 3px ridge #149CEA;
-  outline: none;
-  background-color: transparent;
-  color: white;
-  transition: 1s;
-  border-radius: 0.3em;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-}
 
-.cvbutton::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0%;
-  width: 50%;
-  height: 40%;
-  background-color: black;
-  transition: 0.5s;
-  transform-origin: center;
-}
 
-.cvbutton::before {
-  content: "";
-  transform-origin: center;
-  position: absolute;
-  top: 80%;
-  left: 25%;
-  width: 80%;
-  height: 40%;
-  background-color: black;
-  transition: 0.5s;
-}
-
-.cvbutton:hover::before, button:hover::after {
-  transform: scale(0)
-}
-
-.cvbutton:hover {
-  box-shadow: inset 0px 0px 25px #1479EA;
-}
 
 .underline-animation {
   position: relative;
@@ -221,7 +173,7 @@ body{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(255, 0, 255);
+  background-color: white;
   transition: width 0.4s ease-in;
 }
 

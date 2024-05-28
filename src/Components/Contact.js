@@ -30,7 +30,7 @@ function Contact() {
   return (
     <div>
       <p className='h-1 bg-gradient-to-r from-blue-500 to-black'></p>
-       <h2 className='text-white flex justify-center text-4xl font-verdana font-bold mt-5'>Contact me</h2>
+       <h2 className='text-white text-transparent flex justify-center text-4xl font-verdana font-bold mt-5'>Contact me</h2>
     <div className={` ${isMobile?'h-fit mt-10':'min-h-screen -mt-10'}  ${isMobile?'w-full':'w-full'}   flex justify-center  items-center  text-white text-center`}>
      
       <div className={` w-10/12 flex ${isMobile ? 'flex-col':'flex-row'} ${isMobile ?'mt-6':''}  justify-around  items-center`}>
@@ -42,24 +42,24 @@ function Contact() {
               <li className='flex flex-col leading-loose items-center justify-center'>
                 <FaLinkedin size={32} className='hover:text-[#0882bd] hover:cursor-pointer'/>
                 <h2 >Linked In</h2>
-                <a className='text-gray-500' href="https://www.linkedin.com/in/prajwal-kr-49732727b?">Prajwal KR</a>
+                <a className='text-gray-500' target='_blank' href="https://www.linkedin.com/in/prajwal-kr-49732727b?">Prajwal KR</a>
                 </li>
               <li className='flex flex-col mt-10 leading-loose items-center justify-center'>
                 <FaPhoneAlt size={32} className='hover:text-green-400 hover:cursor-pointer'/>
                 <h2>Contact no</h2>
-                <h3 className='text-gray-500'><a href="tel:+917899274216">+917899274216</a></h3>
+                <h3 className='text-gray-500'><a target='_blank' href="tel:+917899274216">+917899274216</a></h3>
               </li>
             </div>
             <div className=''>
               <li className='flex flex-col items-center leading-loose justify-center ml-10'>
                 <FaGithub size={32} className='hover:text-gray-300 hover:cursor-pointer'/>
                 <h2>Github</h2>
-                <h3 className='text-gray-500'><a href="https://github.com/Prajwal-kr789">Prajwal-kr789</a></h3>
+                <h3 className='text-gray-500'><a target='_blank' href="https://github.com/Prajwal-kr789">Prajwal-kr789</a></h3>
               </li>
               <li className='flex flex-col ml-10 items-center mt-10 leading-loose justify-center'>
                 <IoMail size={32} className='hover:text-yellow-400 hover:cursor-pointer'/>
                 <h2>Email</h2>
-                <h3 className='text-gray-500'><a href="mailto:prajwal07kr@gmail.com">prajwal07kr@gmail.com</a></h3>
+                <h3 className='text-gray-500'><a target='_blank' href="mailto:prajwal07kr@gmail.com">prajwal07kr@gmail.com</a></h3>
               </li>
             </div>
           </ul>

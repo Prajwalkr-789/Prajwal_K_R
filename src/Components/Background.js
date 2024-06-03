@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos'; 
-// import Typical from 'react-typical';
-import Typewriter from 'react-typewriter-effect';
+
 
 import 'aos/dist/aos.css'
 
@@ -36,18 +35,7 @@ setscreensize(window.innerWidth)
     <div className=' h-screen text-white flex justify-center items-center overflow-x-hidden'>
       <div className={` w-10/12 flex ${isMobile?'flex-col':'flex-row'}  justify-around items-center`}>
       <div data-aos="fade-right" className={` ml-6 ${isMobile?'w-full mt-44':'w-6/12'} `} >
-      <h1>
-      <Typewriter 
-      onInit={(typewriter) => {
-        typewriter.typeString('Hello, World!')
-          .pauseFor(1000)
-          .deleteAll()
-          .typeString('This is a typewriter effect.')
-          .pauseFor(1000)
-          .start();
-      }}
-    />
-      </h1>
+  
           <h2 className='text-6xl text-white font-bold'>Prajwal KR</h2>
           {/* text-[#231BE4]  */}
           <h2  className='text-2xl text-cyan-500 font-mono mt-2'>Web developer</h2>
@@ -80,7 +68,7 @@ setscreensize(window.innerWidth)
           <li data-aos="fade-right" data-aos-delay="650"  className={`${isMobile?'ml-16':'ml-24'}`}><span className='text-orange-500 font-semibold'>this</span>.skills.length >= 5</li>
           <li data-aos="fade-right" data-aos-delay="700"  className={`${isMobile?'ml-8':'ml-16'}`}>);</li>
           <li data-aos="fade-right" data-aos-delay="750"  className={`${isMobile?'ml-4':'ml-12'}`}>&#125;;</li>
-          <li data-aos="fade-right" data-aos-delay="800"  className={`${isMobile?'ml-0':'ml-66'}`}>&#125;;</li>
+          <li data-aos="fade-right" data-aos-delay="800"  className={`${isMobile?'ml-0':'ml-64'}`}>&#125;;</li>
         </ul>
         </div>
       </div>

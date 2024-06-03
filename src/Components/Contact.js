@@ -94,9 +94,9 @@ function Contact() {
                   <div class="form_front">
                       <div class="form_details font-verdana">Contact</div>
                       
-                      <input placeholder="Your name..." class="inputC" name='from_name' type="text"/>
-                      <input placeholder="Your email..." class="inputC" name='from_email' type="email"/>
-                      <input placeholder="Your message..." class="inputC" name='message' type="text"/>
+                      <input placeholder="Your name..." class="inputC" name='from_name' type="text"  required/>
+                      <input placeholder="Your email..." class="inputC" name='from_email' type="email" required/>
+                      <input placeholder="Your message..." class="inputC" name='message' type="text" required/>
                       <button class="btn">Submit</button>
                   </div>
               </form>

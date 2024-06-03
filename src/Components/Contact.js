@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useRef } from 'react'
 import { FaGithub,FaPhoneAlt } from 'react-icons/fa'
 import { FaLinkedin } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
+import emailjs from '@emailjs/browser';
 
 function Contact() {
 
@@ -26,6 +27,28 @@ function Contact() {
       setisMobile(false)
     }
   }
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_5rf2r16', 'template_cuq2x0i', form.current, {
+        publicKey: 'O95a0Y_zszKEHNHFh',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          document.getElementsByName('from_name')[0].value = '';
+          document.getElementsByName('from_email')[0].value = '';
+          document.getElementsByName('message')[0].value = '';
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
   return (
     <div className='contact'>
@@ -67,12 +90,13 @@ function Contact() {
         </div>
 
           <div class={`contactform ${isMobile?'mt-10  mb-10':''}`}>
-              <form class="formC">
+              <form class="formC" ref={form} onSubmit={sendEmail}>
                   <div class="form_front">
                       <div class="form_details font-verdana">Contact</div>
                       
-                      <input placeholder="Your name..." class="inputC" type="text"/>
-                      <input placeholder="Your message..." class="inputC" type="text"/>
+                      <input placeholder="Your name..." class="inputC" name='from_name' type="text"/>
+                      <input placeholder="Your email..." class="inputC" name='from_email' type="email"/>
+                      <input placeholder="Your message..." class="inputC" name='message' type="text"/>
                       <button class="btn">Submit</button>
                   </div>
               </form>

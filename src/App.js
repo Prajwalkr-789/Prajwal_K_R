@@ -13,7 +13,7 @@ function App() {
    <>
         <Router>
           
-             <Navbar />
+             <Navbar id />
              <Background/>
          
          <Projects/>

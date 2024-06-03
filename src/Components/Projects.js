@@ -93,7 +93,7 @@ const checkmobile =() =>{
 }
   return (
     
-    <div className={` ${isdark?'':'bg-white'} overflow-x-hidden ${isMobile?'w-full mt-16 ':'w-full py-14'} ${isMobile?'':''} h-full   overflow-x-hidden  text-center`}>
+    <div className={` projects ${isdark?'':'bg-white'} overflow-x-hidden ${isMobile?'w-full mt-16 ':'w-full py-14'} ${isMobile?'':''} h-full   overflow-x-hidden  text-center`}>
         <h2 data-aos="fade-in" className={`${isdark?'text-white':'text-black'} text-5xl ${isMobile?'mt-16':''} text-center mt-1 font-bold`}>Projects</h2>
            <div className='grid grid-cols-1 p-10 gap-4'>
 

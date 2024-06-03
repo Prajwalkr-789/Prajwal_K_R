@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .font-verdana {
     font-family: Verdana, sans-serif;
@@ -70,12 +74,13 @@ body{
       gap: 18px 21px;
       grid-auto-flow: row;
       grid-template-areas:
+      "five"
+        "five"
         "first" 
         "Second "
         "third"
         " four "
-        "five"
-        "five"
+        
         "six"
        " seven";
     }
@@ -86,6 +91,23 @@ body{
       flex-direction: column;
       justify-content: center;
     }
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: black;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: black;
+  }
 }
 
   .Homescreen{

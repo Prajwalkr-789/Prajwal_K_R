@@ -34,7 +34,7 @@ const checkmobile =() =>{
 const styledivs = (isdark) =>`${isdark?'bg-gray-950  border  border-l-2 border-gray-400 shadow-gray-800 shadow-lg':'card '} `
 
   return (
-    <div className="mt-10">
+    <div className="about mt-10">
             <p className="h-1 w-full bg-gradient-to-r from-black to-green-400"></p>
     
     <div className={`${isdark?'bg-sblack':'bg-white text-black'} h-full overflow-x-hidden mt-10  mx-auto bg-opacity-85 rounded-2xl  ${isMobile?'w-full':'w-10/12'}  z-10 `}>
@@ -58,8 +58,8 @@ const styledivs = (isdark) =>`${isdark?'bg-gray-950  border  border-l-2 border-g
         class={`Second p-4 ${styledivs(isdark)} text-center items-center overflow-auto `}
       >
        <h2 className="text-2xl font-bold ">Information Science</h2>
-        <p className="">GM Institute of Technology,Davangere</p>
-        <p className="">Avg_CGPA : 8.5</p>
+        <h3 className="text-md">GM Institute of Technology,Davangere</h3>
+        <h4 className="text-sm">Avg_CGPA : 8.5</h4>
       </div>
       <div
         data-aos={isMobile?'fade-up':'fade-left'}

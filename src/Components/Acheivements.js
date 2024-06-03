@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import image from '../Utils/image.png'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import certi from '../Utils/Adobe Scan 28-May-2024_1.jpg'
 
 function Acheivements() {
 
@@ -36,14 +37,14 @@ function Acheivements() {
   }
 
   return (
-    <div>
+    <div className='acheive'>
       <div className={` ${isdark?'b text-white':'bg-white text-black'} ${isMobile?'w-full':'w-full'} ${isMobile?'h-fit':'h-fit'}  overflow-x-hidden   `}>
       <h2 data-aos="fade-in" data-aos-delay={100}  className={` text-5xl font-bold  ${isMobile?'mt-20':''} text-center `}>Achievements</h2>
 
             <div className={`w-10/12 mt-10   flex items-center justify-center ${screensize < 1000 ? 'grid-cols-1' : 'grid-cols-2'}  ${isMobile?'ml-8 ':'mx-auto'}  gap-y-6 `}>
-                <div data-aos="fade-up" className={` ${isMobile?'w-12/12':'w-6/12'}  hover:-translate-y-2 transition-transform duration-200 ease-in-out hover:shadow-md  hover:shadow-gray-500  ${isdark?'bg-transparent':'bg-white'} bg-opacity-50 text-center flex justify-center items-center  rounded-lg hover:cursor-pointer p-2`}>
-                    <img src={image} className='w-6/12 ' alt="" />
-                    <p className=' break-words w-7/12'>Runner-up🥈 at Sukalpa23 State level coding competition</p>
+                <div data-aos="fade-up" className={` ${isMobile?'w-12/12':'w-6/12'}  hover:-translate-y-2 transition-transform duration-200 ease-in-out hover:shadow-md  hover:shadow-gray-500  ${isdark?'bg-transparent':'bg-white'} bg-opacity-50 text-center  flex flex-col justify-center items-center  rounded-lg hover:cursor-pointer `}>
+                    <img src={certi} className={`${isMobile ? 'w-9/12' :'w-6/12'}`} alt="" />
+                    <p className=' break-words w-7/12 mt-2'>Runner-up🥈 at Sukalpa23 State level coding competition</p>
                 </div>
                 {/* <div className={` ${isMobile?'w-12/12':'w-10/12'} hover:-translate-y-2 transition-transform duration-200 shadow-md  shadow-gray-500 ${isdark?'bg-black':'bg-white'} bg-opacity-50 text-center flex justify-center items-center hover:shadow-md rounded-lg hover:cursor-pointer hover:shadow-fuchsia-400 p-2`}>
                     <img src={image} className='w-6/12 ' alt="" />

@@ -28,7 +28,7 @@ function Contact() {
   }
 
   return (
-    <div>
+    <div className='contact'>
       <p className='h-1 bg-gradient-to-r from-blue-500 to-black'></p>
        <h2 className='text-white text-transparent flex justify-center text-4xl font-verdana font-bold mt-5'>Contact me</h2>
     <div className={` ${isMobile?'h-fit mt-10':'min-h-screen -mt-10'}  ${isMobile?'w-full':'w-full'}   flex justify-center  items-center  text-white text-center`}>

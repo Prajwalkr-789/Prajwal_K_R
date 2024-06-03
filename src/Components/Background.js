@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos'; 
+// import Typical from 'react-typical';
+import Typewriter from 'react-typewriter-effect';
+
 import 'aos/dist/aos.css'
 
 function Background() {
@@ -33,15 +36,26 @@ setscreensize(window.innerWidth)
     <div className=' h-screen text-white flex justify-center items-center overflow-x-hidden'>
       <div className={` w-10/12 flex ${isMobile?'flex-col':'flex-row'}  justify-around items-center`}>
       <div data-aos="fade-right" className={` ml-6 ${isMobile?'w-full mt-44':'w-6/12'} `} >
-
+      <h1>
+      <Typewriter 
+      onInit={(typewriter) => {
+        typewriter.typeString('Hello, World!')
+          .pauseFor(1000)
+          .deleteAll()
+          .typeString('This is a typewriter effect.')
+          .pauseFor(1000)
+          .start();
+      }}
+    />
+      </h1>
           <h2 className='text-6xl text-white font-bold'>Prajwal KR</h2>
           {/* text-[#231BE4]  */}
           <h2  className='text-2xl text-cyan-500 font-mono mt-2'>Web developer</h2>
           <h2 className={`${isMobile?'text-md':'text-xl'} font-medium w-8/12 text-white`}>Versatile <span className='text-[#FF0016] font-extrabold underline'>full stack developer</span> with expertise in front-end and back-end technologies, creating dynamic, responsive, and scalable web applications.</h2>
          
          <div className={`flex ${isMobile?'w-10/12 mt-5 mb-5':'w-6/12  mt-5'} `}>
-          <button className=' border-2 shadow-sm shadow-cyan-600 border-cyan-500 p-3 font-bold rounded-2xl hover:bg-cyan-500'>Contact me</button>
-          <button className=' border-2 shadow-sm shadow-cyan-600 border-cyan-500 p-3 font-bold rounded-2xl hover:bg-cyan-500 ml-3 mt-2 '>Download CV</button>
+          {/* <button className=' border-2 shadow-sm shadow-cyan-600 border-cyan-500 p-3 font-bold rounded-2xl hover:bg-cyan-500'>Contact me</button> */}
+          <button className=' border-2 shadow-2xl shadow-cyan-600 border-cyan-500 p-3 font-bold rounded-2xl hover:bg-cyan-500 mt-2 '>Download CV</button>
           </div> 
       </div>
 

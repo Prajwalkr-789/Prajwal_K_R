@@ -46,7 +46,7 @@ const styledivs = (isdark) =>`${isdark?'bg-gray-950  border  border-l-2 border-g
     <div class={`container p-12 ${isdark?'text-white':'text-black'} z-10`}>
       <div
         data-aos={isMobile?'fade-up':'fade-left'}
-        class={`first p-4 ${styledivs(isdark)} text-center flex flex-col justify-center items-center overflow-auto `}
+        class={`first  p-4 ${styledivs(isdark)} text-center flex flex-col justify-center items-center overflow-auto `}
       >
         
        <h2 className="text-4xl font-semibold">Prajwal KR</h2>
@@ -85,7 +85,7 @@ const styledivs = (isdark) =>`${isdark?'bg-gray-950  border  border-l-2 border-g
         data-aos={isMobile?'fade-up':'fade-right'}
         class={`five p-4 ${styledivs(isdark)} ${isMobile?'':'ml-10'}  bg-transparent border-none shadow-none text-center font-verdana bg-opacity-100 overflow-hidden  `}
       >
-         <img className="w-8/12 mx-auto shadow-md shadow-blue-400 bg-blue-500 rounded-full" src={personal} alt="Photograph" />
+         <img className="w-8/12 mx-auto shadow-md shadow-blue-400 bg-blue-500 borrad " src={personal} alt="Photograph" />
       </div>
       <div
         data-aos={isMobile?'fade-up':'fade-right'}

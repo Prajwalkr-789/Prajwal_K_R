@@ -7,12 +7,13 @@ import Background from './Components/Background';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Acheivements from './Components/Acheivements';
+import Another from './Components/Another';
 
 function App() {
   return (
    <>
         <Router>
-          
+            {/* <Another/> */}
              <Navbar id />
              <Background/>
          

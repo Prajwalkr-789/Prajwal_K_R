@@ -38,11 +38,12 @@ function Acheivements() {
 
   return (
     <div className='acheive'>
+      <p className='h-1 mb-5 bg-gradient-to-r from-red-400 to black'></p>
       <div className={` ${isdark?'b text-white':'bg-white text-black'} ${isMobile?'w-full':'w-full'} ${isMobile?'h-fit':'h-fit'}  overflow-x-hidden   `}>
       <h2 data-aos="fade-in" data-aos-delay={100}  className={` text-5xl font-bold  ${isMobile?'mt-20':''} text-center `}>Achievements</h2>
 
             <div className={`w-10/12 mt-10   flex items-center justify-center ${screensize < 1000 ? 'grid-cols-1' : 'grid-cols-2'}  ${isMobile?'ml-8 ':'mx-auto'}  gap-y-6 `}>
-                <div data-aos="fade-up" className={` ${isMobile?'w-12/12':'w-6/12'}  hover:-translate-y-2 transition-transform duration-200 ease-in-out hover:shadow-md  hover:shadow-gray-500  ${isdark?'bg-transparent':'bg-white'} bg-opacity-50 text-center  flex flex-col justify-center items-center  rounded-lg hover:cursor-pointer `}>
+                <div data-aos="fade-up" className={` ${isMobile?'w-12/12':'w-6/12'}  hover:-translate-y-2 transition-transform duration-200 ease-in-out  ${isdark?'bg-transparent':'bg-white'} bg-opacity-50 text-center  flex flex-col justify-center items-center  rounded-lg hover:cursor-pointer `}>
                     <img src={certi} className={`${isMobile ? 'w-9/12' :'w-6/12'}`} alt="" />
                     <p className=' break-words w-7/12 mt-2'>Runner-up🥈 at Sukalpa23 State level coding competition</p>
                 </div>
@@ -51,8 +52,8 @@ function Acheivements() {
                     <p className=' break-words w-7/12 '>Runner-up at Sukalpa23 State level coding competition</p>
                 </div> */}
               </div>
-                <h2 data-aos="fade-up" data-aos-delay={100} className=' text-4xl font-bold text-center mt-6 bg-gradient-to-r from-[#D402FD] via-[#FD02A8] to-[#5702FD] text-transparent bg-clip-text'>Certifications</h2>
-              <div className={`  mt-10 grid place-items-center  ${screensize < 1000 ? 'grid-cols-1' : 'grid-cols-3'}  ${isMobile?'p-10':'mx-auto'}  gap-y-6 `}>
+                {/* <h2 data-aos="fade-up" data-aos-delay={100} className=' text-4xl font-bold text-center mt-6 bg-gradient-to-r from-[#D402FD] via-[#FD02A8] to-[#5702FD] text-transparent bg-clip-text'>Certifications</h2> */}
+              {/* <div className={`  mt-10 grid place-items-center  ${screensize < 1000 ? 'grid-cols-1' : 'grid-cols-3'}  ${isMobile?'p-10':'mx-auto'}  gap-y-6 `}>
                
                   <div data-aos="fade-left" data-aos-delay={100}  className={`${isMobile?'w-12/12':'w-7/12'}  hover:-translate-y-2 transition-transform duration-200 shadow-md shadow-gray-500 ${isdark?'bg-black':'bg-white'} bg-opacity-50 text-center flex flex-col justify-center items-center hover:shadow-md rounded-lg hover:cursor-pointer  `}>
                     <img src={image} className='w-full ' alt="" />
@@ -68,7 +69,7 @@ function Acheivements() {
                     <img src={image} className='w-full ' alt="" />
                     <p className=' break-words w-8/12'>Introduction to programming in C</p>
                 </div>
-            </div>
+            </div> */}
                   </div>
     </div>
   )

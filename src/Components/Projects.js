@@ -101,7 +101,7 @@ const checkmobile =() =>{
            {
             projects.map((res)=>(
               <>
-              <div data-aos="fade-up" className={`${isMobile?'w-full ':' w-6/12'} mx-auto  rounded-lg mt-5`}>
+              <div data-aos="fade-up" className={`${isMobile?'w-full ':' w-5/12'} mx-auto  rounded-lg mt-5`}>
                 <img className='w-full  transition transform duration-300 ease-in hover:scale-[1.05] hover:cursor-pointer' src={res.image} alt="" />
                 <p data-aos="fade-in" className='text-white mt-5'>{res.description}</p>
                 <ul className='flex flex-row justify-around mt-8 items-center'>

@@ -100,7 +100,9 @@ body{
   margin-left: 2px;
   animation: blink 1s step-end infinite;
 }
-
+.borrad{
+  border-radius: 50%;
+}
 @keyframes blink {
   from, to {
     background-color: transparent;

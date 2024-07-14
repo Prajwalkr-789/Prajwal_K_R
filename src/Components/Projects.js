@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import image1 from '../Utils/jpeg-optimizer_qTQmsQuNY.png';
 import image2 from '../Utils/jpeg-optimizer_8de0e72ac23.png';
 import ecom from '../Utils//jpeg-optimizer_download (3).png';
-// import ecom from '../Utils/download (2).png';
+
+import sukalpa from '../Utils/download (1)-Photoroom.png'
 import citys from '../Utils/jpeg-optimizer_download (4) (1).png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -14,7 +15,7 @@ const projects = [
     image: ecom,
     anc: "",
     techStack: ['React', 'Node Js', 'Tailwind CSS'],
-    description: 'A full-featured ecommerce website with user authentication, product listings, and secure payment gateway integration.'
+    description: 'A full-featured ecommerce website with user authentication, product listings , User friendly and Responsive web design.'
   },
   {
     id: 2,
@@ -26,19 +27,19 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Rock paper Scissors Game',
-    image: image2,
-    anc: "",
+    title: 'Sukalpa24 Website',
+    image: sukalpa,
+    anc: "https://gmu.ac.in/public/sukalpa24/",
     techStack: ['HTML', 'CSS', 'Javascript'],
-    description: 'An interactive Rock Paper Scissors game with responsive design and real-time score tracking using JavaScript.'
+    description: 'An interactive Website built for college Technical fest'
   },
   {
     id: 4,
     title: 'Blog Platform',
     image: image1,
     anc: "",
-    techStack: ['Gatsby', 'Contentful', 'SASS'],
-    description: 'A modern blog platform featuring dynamic content management, SEO optimization, and responsive design using Gatsby.'
+    techStack: ['React','Node js','Mongo Atlas'],
+    description: 'A modern blog platform featuring dynamic content management,user authentication and responsive design '
   },
   {
     id: 5,
@@ -110,7 +111,7 @@ const checkmobile =() =>{
                   <li data-aos="zoom-in" data-aos-delay="300" className={`rounded-xl text-gray-400 border border-gray-400 px-2 text-xs py-[1px]`}>{res.techStack[1]}</li>
                   <li data-aos="zoom-in" data-aos-delay="400" className={`rounded-xl text-gray-400 border border-gray-400 px-2 text-xs py-[1px]`}>{res.techStack[2]}</li>
                 </ul>
-                <h2 data-aos={`${res.id % 2 == 0?'fade-left':'fade-right'}`} className='mt-4 font-serif text-gray-100 text-xl mb-3'><a href={res.anc}>{res.title} &#8599; </a></h2>
+                <h2 data-aos={`${res.id % 2 == 0?'fade-left':'fade-right'}`} className='mt-4 font-serif text-gray-100 text-xl mb-3'><a href={res.anc} target='_blank'>{res.title} &#8599; </a></h2>
               </div>
               </>
             ))}

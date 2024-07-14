@@ -3,7 +3,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { IoIosContact } from "react-icons/io";
 import { Link  } from 'react-router-dom';
-import image from '../Utils/IMG_20240206_195126 (1).jpg'
 import {Link as ScrollLink} from 'react-scroll'
 import Projects from './Projects';
 

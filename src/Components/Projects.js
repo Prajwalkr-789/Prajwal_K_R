@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import image1 from '../Utils/jpeg-optimizer_qTQmsQuNY.png';
 import image2 from '../Utils/jpeg-optimizer_8de0e72ac23.png';
-import ecom from '../Utils//jpeg-optimizer_download (3).png';
-
-import sukalpa from '../Utils/download (1)-Photoroom.png'
-import citys from '../Utils/jpeg-optimizer_download (4) (1).png';
+import ecom from '../Utils/ecommerce.png';
+import sukalpa from '../Utils/Sukalpa.png'
+import citys from '../Utils/COmplain.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

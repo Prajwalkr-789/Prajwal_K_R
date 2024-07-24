@@ -153,7 +153,7 @@ const styledivs = (isdark) =>`${isdark?'bg-gray-950  border  border-l-2 border-g
             <li>{isdark?'⚪':'🔵'} Responsive web design</li>
           </div>
           <div className={`leading-loose text-start ${isMobile?'-ml-10':''}`}>
-            <li>{isdark?'⚪':'🔵'} Tailwind Js</li>
+            <li>{isdark?'⚪':'🔵'} Tailwind CSS</li>
             <li>{isdark?'⚪':'🔵'} Node Js</li>
             <li>{isdark?'⚪':'🔵'} Express Js</li>
             <li>{isdark?'⚪':'🔵'} MongoDB</li>

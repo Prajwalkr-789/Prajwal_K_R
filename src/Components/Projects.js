@@ -32,30 +32,30 @@ const projects = [
     techStack: ['HTML', 'CSS', 'Javascript'],
     description: 'An interactive Website built for college Technical fest'
   },
-  {
-    id: 4,
-    title: 'Blog Platform',
-    image: image1,
-    anc: "",
-    techStack: ['React','Node js','Mongo Atlas'],
-    description: 'A modern blog platform featuring dynamic content management,user authentication and responsive design '
-  },
-  {
-    id: 5,
-    title: 'Task Management Tool',
-    image: image2,
-    anc: "",
-    techStack: ['Vue', 'Firebase', 'Bootstrap'],
-    description: 'A task management tool for teams to create, assign, and track tasks with real-time updates and notifications.'
-  },
-  {
-    id: 6,
-    title: 'Weather Dashboard',
-    image: image1,
-    anc: "",
-    techStack: ['Angular', 'Node Js', 'Material UI'],
-    description: 'A weather dashboard providing real-time weather updates, forecasts, and interactive charts using Angular and Material UI.'
-  },
+  // {
+  //   id: 4,
+  //   title: 'Blog Platform',
+  //   image: image1,
+  //   anc: "",
+  //   techStack: ['React','Node js','Mongo Atlas'],
+  //   description: 'A modern blog platform featuring dynamic content management,user authentication and responsive design '
+  // },
+  // {
+  //   id: 5,
+  //   title: 'Task Management Tool',
+  //   image: image2,
+  //   anc: "",
+  //   techStack: ['Vue', 'Firebase', 'Bootstrap'],
+  //   description: 'A task management tool for teams to create, assign, and track tasks with real-time updates and notifications.'
+  // },
+  // {
+  //   id: 6,
+  //   title: 'Weather Dashboard',
+  //   image: image1,
+  //   anc: "",
+  //   techStack: ['Angular', 'Node Js', 'Material UI'],
+  //   description: 'A weather dashboard providing real-time weather updates, forecasts, and interactive charts using Angular and Material UI.'
+  // },
 ];
 
 
@@ -68,17 +68,13 @@ function Projects() {
     useEffect(()=>{
         AOS.init({duration:1000})
         checkmobile()
-    })
+    },[])
     
 window.addEventListener('resize',()=>{
   checkmobile()
   setscreensize(window.innerWidth)
   // console.log(window.innerWidth)
 })
-
-
-
-    
 
 const checkmobile =() =>{
   if(window.innerWidth <= 600){
@@ -97,7 +93,6 @@ const checkmobile =() =>{
         <h2 data-aos="fade-in" className={`${isdark?'text-white':'text-black'} text-5xl ${isMobile?'mt-16':''} text-center mt-1 font-bold`}>Projects</h2>
            <div className='grid grid-cols-1 p-10 gap-4'>
 
-          
            {
             projects.map((res)=>(
               <>
@@ -110,7 +105,7 @@ const checkmobile =() =>{
                   <li data-aos="zoom-in" data-aos-delay="300" className={`rounded-xl text-gray-400 border border-gray-400 px-2 text-xs py-[1px]`}>{res.techStack[1]}</li>
                   <li data-aos="zoom-in" data-aos-delay="400" className={`rounded-xl text-gray-400 border border-gray-400 px-2 text-xs py-[1px]`}>{res.techStack[2]}</li>
                 </ul>
-                <h2 data-aos={`${res.id % 2 == 0?'fade-left':'fade-right'}`} className='mt-4 font-serif text-gray-100 text-xl mb-3'><a href={res.anc} target='_blank'>{res.title} &#8599; </a></h2>
+                <h2 data-aos={`${res.id % 2 == 0?'fade-left':'fade-right'}`} className='mt-4 font-serif text-gray-100 text-xl mb-3'><a href={res.anc} target='_blank' rel='noreferrer'>{res.title} &#8599; </a></h2>
               </div>
               </>
             ))}

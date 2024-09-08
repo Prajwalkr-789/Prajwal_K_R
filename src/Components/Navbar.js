@@ -15,7 +15,9 @@ function Navbar() {
     useEffect(()=>{
         AOS.init({duration:2000})
         checkmobile()
-    })
+        
+
+    },[])
 
     window.addEventListener('resize',()=>{
         checkmobile()

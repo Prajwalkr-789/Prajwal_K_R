@@ -11,7 +11,7 @@ function Contact() {
 
   useEffect(()=>{
     checkmobile()
-  })
+  },[])
 
   window.addEventListener('resize',()=>{
     checkmobile()

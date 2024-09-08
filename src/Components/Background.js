@@ -10,7 +10,7 @@ function Background() {
   const [isMobile , setisMobile] = useState('')
   const [isdark , setisdark] = useState(true)
   const checkmobile =() =>{
-    if(window.innerWidth <= 600){
+    if(window.innerWidth <= 700){
       setisMobile(true)
       setscreensize(window.innerWidth)
       
@@ -23,7 +23,7 @@ function Background() {
   useEffect(()=>{
     AOS.init({duration : 1000})
     checkmobile()
-})
+},[])
 
 window.addEventListener('resize',()=>{
 checkmobile()
@@ -59,7 +59,7 @@ setscreensize(window.innerWidth)
       
 
 
-      <div className={`bg-gray-950 ${isMobile?'w-full p-1':'w-6/12'}  h-fit rounded-md shadow-md shadow-blue-600 `}>
+      <div className={`bg-gray-950 ${isMobile?'w-full p-1 ':'w-6/12'}  h-fit rounded-md shadow-md shadow-blue-600 `}>
         <p className={` h-0.5 bg-gradient-to-r from-[#009FFF] via-fuchsia-500 to-[#ec2F4B]`}/>
         <p className='mt-1 ml-2 mb-1'>🔴 🟢 🔵</p>
         <p className={`h-0.5 bg-gradient-to-r from-[#ec2F4B] via-fuchsia-500 to-[#009FFF]`} />

@@ -339,3 +339,22 @@ body{
   inset -1px -1px 5px rgba(255, 255, 255, 0.6);
 } */
 
+@keyframes moveright {
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-right{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s forwards ease-out , opacity 1s ease-out;
+}
+.animate-right.in-view{
+  animation: moveright 1s forwards;
+}

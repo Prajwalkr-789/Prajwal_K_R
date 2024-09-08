@@ -48,6 +48,9 @@
   "react-typing-effect": "^2.0.5",
   
     
+  "react-window": "^1.8.10",
+  
+    
   "web-vitals": "^2.1.4"
   
   },

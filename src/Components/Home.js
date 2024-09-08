@@ -11,8 +11,9 @@ function Home() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
     checkmobile()
+    console.log("all")
     setscreensize(window.innerWidth)
-  });
+  },[]);
 
 
 window.addEventListener('resize',()=>{
